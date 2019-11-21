@@ -4,7 +4,7 @@ const path = require("path");
 const fs = require("fs");
 
 const app = express();
-const PORT = 8080;
+const PORT = process.env.PORT || 3000;
 const mainDir = path.join(__dirname, "/public");
 
 //middleware
